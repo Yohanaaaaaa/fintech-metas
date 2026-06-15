@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech - Metas Financeiras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div>
+                <h1 class="logo">
+                    <img src="images/logo.png" alt="Logo Fintech" class="logo-image">
+                </h1>
+
+                <div class="sidebar-divider"></div>
+
+                <p class="sidebar-title">Menu Principal</p>
+
+                <nav class="sidebar-nav">
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        <span>Transa&ccedil;&otilde;es</span>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Relat&oacute;rios</span>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-shapes"></i>
+                        <span>Categorias</span>
+                    </a>
+
+                    <a href="#" class="menu-item active">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Metas</span>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Conta Banc&aacute;ria</span>
+                    </a>
+                </nav>
+            </div>
+
+            <a href="#" class="menu-item menu-logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Sair</span>
+            </a>
+        </aside>
+
+        <main class="page">
+            <input type="checkbox" id="modal-meta-toggle" class="modal-toggle">
+
+            <header class="topbar">
+                <div>
+                    <h2 class="page-title">Metas Financeiras</h2>
+                    <p class="page-subtitle">Acompanhe o progresso das suas metas</p>
+                </div>
+
+                <div class="topbar-actions">
+                    <label class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Buscar...">
+                    </label>
+
+                    <button class="icon-button" type="button" aria-label="Notifica&ccedil;&otilde;es">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+
+                    <div class="user-badge">YA</div>
+
+                    <div class="user-meta">
+                        <strong>Yohang Amorim</strong>
+                        <span>yohang@gmail.com</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="summary-grid">
+                <article class="summary-card">
+                    <div class="summary-head">
+                        <span>Metas ativas</span>
+                        <div class="summary-icon blue-soft">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                    </div>
+                    <strong class="summary-value">3</strong>
+                    <p class="summary-note">1 conclu&iacute;da</p>
+                </article>
+
+                <article class="summary-card">
+                    <div class="summary-head">
+                        <span>Total acumulado</span>
+                        <div class="summary-icon green-soft">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                    </div>
+                    <strong class="summary-value">R$ 49.700</strong>
+                    <p class="summary-note">de R$ 90.000 (55%)</p>
+                </article>
+
+                <article class="summary-card">
+                    <div class="summary-head">
+                        <span>Contribui&ccedil;&atilde;o mensal</span>
+                        <div class="summary-icon mint-soft">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                    </div>
+                    <strong class="summary-value">R$ 3.900</strong>
+                    <p class="summary-note">Para todas as metas</p>
+                </article>
+
+                <article class="summary-card">
+                    <div class="summary-head">
+                        <span>Progresso geral</span>
+                        <div class="summary-icon blue-soft">
+                            <i class="fa-solid fa-piggy-bank"></i>
+                        </div>
+                    </div>
+                    <strong class="summary-value">55.2%</strong>
+                    <div class="mini-progress">
+                        <span style="width:55.2%"></span>
+                    </div>
+                </article>
+            </section>
+
+            <div class="toolbar">
+                <div class="filters">
+                    <button type="button" class="filter-pill active-pill">Todas</button>
+                    <button type="button" class="filter-pill">Ativas</button>
+                    <button type="button" class="filter-pill">Conclu&iacute;das</button>
+                </div>
+
+                <label for="modal-meta-toggle" class="nova-meta">
+                    + Nova Meta
+                </label>
+            </div>
+
+            <section class="content-grid">
+                <div class="goals-list">
+                    <article class="goal-card">
+                        <div class="goal-header">
+                            <div class="goal-intro">
+                                <div class="goal-icon blue-text">
+                                    <i class="fa-solid fa-plane"></i>
+                                </div>
+
+                                <div>
+                                    <div class="goal-title-row">
+                                        <h3 class="goal-title">Viagem para It&aacute;lia</h3>
+                                        <span class="status-tag high-tag">Alta</span>
+                                    </div>
+
+                                    <div class="goal-meta-row">
+                                        <strong>R$ 8.500</strong>
+                                        <span>/ R$ 15.000</span>
+                                        <span class="meta-dot"></span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>250 dias restantes</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="more-button" aria-label="Mais op&ccedil;&otilde;es">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </div>
+
+                        <div class="progress-track">
+                            <span class="progress-fill blue-fill" style="width:57%"></span>
+                        </div>
+
+                        <div class="goal-footer">
+                            <span>57% completo</span>
+                            <span>R$ 800/m&ecirc;s</span>
+                        </div>
+                    </article>
+
+                    <article class="goal-card">
+                        <div class="goal-header">
+                            <div class="goal-intro">
+                                <div class="goal-icon green-text">
+                                    <i class="fa-solid fa-piggy-bank"></i>
+                                </div>
+
+                                <div>
+                                    <div class="goal-title-row">
+                                        <h3 class="goal-title">Reserva de Emerg&ecirc;ncia</h3>
+                                        <span class="status-tag high-tag">Alta</span>
+                                    </div>
+
+                                    <div class="goal-meta-row">
+                                        <strong>R$ 15.000</strong>
+                                        <span>/ R$ 20.000</span>
+                                        <span class="meta-dot"></span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>97 dias restantes</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="more-button" aria-label="Mais op&ccedil;&otilde;es">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </div>
+
+                        <div class="progress-track">
+                            <span class="progress-fill green-fill" style="width:75%"></span>
+                        </div>
+
+                        <div class="goal-footer">
+                            <span>75% completo</span>
+                            <span>R$ 1.500/m&ecirc;s</span>
+                        </div>
+                    </article>
+
+                    <article class="goal-card">
+                        <div class="goal-header">
+                            <div class="goal-intro">
+                                <div class="goal-icon purple-text">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+
+                                <div>
+                                    <div class="goal-title-row">
+                                        <h3 class="goal-title">Entrada do Apartamento</h3>
+                                        <span class="status-tag medium-tag">M&eacute;dia</span>
+                                    </div>
+
+                                    <div class="goal-meta-row">
+                                        <strong>R$ 22.000</strong>
+                                        <span>/ R$ 50.000</span>
+                                        <span class="meta-dot"></span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>615 dias restantes</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="more-button" aria-label="Mais op&ccedil;&otilde;es">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </div>
+
+                        <div class="progress-track">
+                            <span class="progress-fill purple-fill" style="width:44%"></span>
+                        </div>
+
+                        <div class="goal-footer">
+                            <span>44% completo</span>
+                            <span>R$ 1.200/m&ecirc;s</span>
+                        </div>
+                    </article>
+
+                    <article class="goal-card">
+                        <div class="goal-header">
+                            <div class="goal-intro">
+                                <div class="goal-icon soft-green-text">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </div>
+
+                                <div>
+                                    <div class="goal-title-row">
+                                        <h3 class="goal-title">Curso de Franc&ecirc;s</h3>
+                                        <span class="status-tag medium-tag">M&eacute;dia</span>
+                                        <span class="status-tag complete-tag">Conclu&iacute;da</span>
+                                    </div>
+
+                                    <div class="goal-meta-row">
+                                        <strong>R$ 3.000</strong>
+                                        <span>/ R$ 3.000</span>
+                                        <span class="meta-dot"></span>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span>Meta atingida</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="more-button" aria-label="Mais op&ccedil;&otilde;es">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </div>
+
+                        <div class="progress-track">
+                            <span class="progress-fill light-green-fill" style="width:100%"></span>
+                        </div>
+
+                        <div class="goal-footer">
+                            <span>100% completo</span>
+                            <span></span>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="details-panel">
+                    <div class="details-placeholder">
+                        <i class="fa-solid fa-trophy"></i>
+                        <p>Selecione uma meta para ver os detalhes</p>
+                    </div>
+                </aside>
+            </section>
+
+            <div class="modal">
+                <label for="modal-meta-toggle" class="modal-overlay"></label>
+
+                <div class="modal-box">
+                    <div class="modal-topo">
+                        <div>
+                            <h3 class="modal-titulo">Criar nova meta</h3>
+                            <p class="modal-subtitulo">Preencha o formul&aacute;rio para cadastrar uma nova meta.</p>
+                        </div>
+
+                        <label for="modal-meta-toggle" class="modal-fechar">&times;</label>
+                    </div>
+
+                    <form class="meta-form">
+                        <div class="form-grupo">
+                            <label for="nome-meta">Nome da meta</label>
+                            <input type="text" id="nome-meta" placeholder="Ex: Intercambio em 2027">
+                        </div>
+
+                        <div class="form-linha">
+                            <div class="form-grupo">
+                                <label for="valor-meta">Valor alvo</label>
+                                <input type="text" id="valor-meta" placeholder="R$ 10.000">
+                            </div>
+
+                            <div class="form-grupo">
+                                <label for="prazo-meta">Prazo</label>
+                                <input type="month" id="prazo-meta">
+                            </div>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="prioridade-meta">Prioridade</label>
+                            <select id="prioridade-meta">
+                                <option>Alta</option>
+                                <option>Media</option>
+                                <option>Baixa</option>
+                            </select>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="descricao-meta">Observa&ccedil;&otilde;es</label>
+                            <textarea id="descricao-meta" rows="4" placeholder="Escreva um lembrete ou detalhe importante sobre essa meta."></textarea>
+                        </div>
+
+                        <div class="modal-acoes">
+                            <label for="modal-meta-toggle" class="acao-secundaria">Cancelar</label>
+                            <button type="button" class="acao-primaria">Salvar meta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
